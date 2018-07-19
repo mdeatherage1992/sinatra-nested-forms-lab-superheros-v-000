@@ -1,3 +1,15 @@
+<h1>Team</h1>
 
+<div class="team">
+  <h3>Name: <%= @team.name %></h3><br>
+  <h4>Height: <%= @team.motto %> inches</h4></br>
+</div><br>
 
-
+<h1>Heroes</h1>
+<% @heroes.each do |hero| %>
+  <div class="hero">
+    <p>Name: <%= hero.name %></p><br>
+    <p>Type: <%= hero.power %></p><br>
+    <p>Booty: <%= hero.bio %></p><br>
+  </div><br>
+<% end %>
