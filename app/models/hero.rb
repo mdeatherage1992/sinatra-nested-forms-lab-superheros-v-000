@@ -18,5 +18,5 @@ class Hero
     @@HEROES = []
   end
 
-end
+
 end
