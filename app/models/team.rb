@@ -13,5 +13,5 @@ class Team
     TEAMS
   end
 
-end
+
 end
