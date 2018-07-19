@@ -6,10 +6,10 @@
 </div><br>
 
 <h1>Heroes</h1>
-<% @heroes.each do |hero| %>
+<% @team_members.each.with_index do |hero,value| %>
   <div class="hero">
-    <p>Hero Name: <%= hero.name %></p><br>
-    <p>Hero Power: <%= hero.power %></p><br>
-    <p>Hero Biography: <%= hero.bio %></p><br>
+    <p>Hero Name: <%= @hero_name[value] %></p><br>
+    <p>Hero Power: <%= @hero_power[value] %></p><br>
+    <p>Hero Biography: <%= @hero_bio[value] %></p><br>
   </div><br>
 <% end %>
