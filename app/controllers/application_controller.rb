@@ -7,7 +7,7 @@ set :views, Proc.new { File.join(root, "../views/") }
     erb :form
   end
 
-post '/heroes' do
+post '/teams' do
   @team = Team.new(params[:team])
   params[:team][:heroes].each do |details|
   Hero.new(details)
